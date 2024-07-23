@@ -15,7 +15,7 @@ def proceed_data():
             for phone, id_, hash_ in zip(phones, ids, hashes)}
 
     # Запись словаря в JSON файл
-    with open('output.json', 'w') as json_file:
+    with open('api_config.json', 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
-    print("Данные успешно сохранены в out.json")
+    print("Данные успешно сохранены в api_config.json")
